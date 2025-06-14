@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,11 +7,7 @@
   <title>THE GOLDENS - Official Site</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rock+Salt&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Open Sans', sans-serif;
       background-color: #FFD700;
@@ -37,9 +34,7 @@
       font-weight: bold;
       font-size: 1rem;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover { text-decoration: underline; }
     .separator {
       border-top: 2px solid #222;
       width: 100%;
@@ -58,14 +53,42 @@
       padding-bottom: 5px;
       text-align: left;
     }
-    ul {
-      list-style: none;
-      padding-left: 0;
+    .album {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
     }
-    li {
-      margin-bottom: 10px;
+    .album-cover {
+      height: 140px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      flex-shrink: 0;
+    }
+    .album-info {
+      margin-left: 20px;
+      font-size: 0.63rem;
+      line-height: 1.25;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 140px;
+    }
+    .album-info h3 {
+      margin: 0 0 4px;
+      font-size: 1.2rem;
+    }
+    .release-date {
+      margin: 0 0 6px;
       font-weight: bold;
     }
+    .tracklist {
+  margin: 0;
+  padding-left: 1.2em;
+  list-style-type: decimal;
+}
+section#shop {
+  margin-top: 80px;
+}
     iframe {
       width: 100%;
       max-width: 560px;
@@ -73,33 +96,6 @@
       display: block;
       margin: 0 auto;
     }
-    .icon {
-      width: 22px;
-      height: 22px;
-      vertical-align: middle;
-      margin-right: 6px;
-      filter: invert(16%) sepia(76%) saturate(2733%) hue-rotate(1deg) brightness(99%) contrast(101%);
-    }
-    #shop a, #music a, #contact a {
-      display: inline-block;
-      margin: 10px 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #222;
-    }
-    #shop a:hover, #music a:hover, #contact a:hover {
-      text-decoration: underline;
-    }
-    #contact {
-      text-align: left;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    #contact p {
-      margin-bottom: 10px;
-    }
-
     footer {
       text-align: center;
       padding: 30px 0;
@@ -117,12 +113,11 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>THE GOLDENS</h1>
     <nav>
       <a href="#live-schedule">LIVE</a>
-      <a href="#music">MUSIC</a>
+      <a href="#disco">DISCO</a>
       <a href="#shop">SHOP</a>
       <a href="#videos">VIDEOS</a>
       <a href="#contact">CONTACT</a>
@@ -137,16 +132,57 @@
     </ul>
   </section>
 
-  <section id="music">
-    <h2>MUSIC</h2>
-    <a href="https://music.apple.com/jp/artist/the-goldens/1698548219" target="_blank" rel="noopener noreferrer">
-      <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Apple_Music_logo.svg/1024px-Apple_Music_logo.svg.png" alt="Apple Music" />
-      Apple Music
-    </a>
-    <a href="https://open.spotify.com/intl-ja/artist/3N6rJZUB5KhUmpR1r82IZj?si=LkyBAHcnQbm0x7K0jjvG5Q" target="_blank" rel="noopener noreferrer">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;" />
-      Spotify
-    </a>
+  <section id="disco">
+    <h2>DISCO</h2>
+
+    <div class="album">
+      <a href="https://link-map.jp/links/tpncX1zE" target="_blank" rel="noopener noreferrer">
+        <img class="album-cover" src="1stGoldens.jpg" alt="THE GOLDENS Album Cover">
+      </a>
+      <div class="album-info">
+        <a href="https://link-map.jp/links/tpncX1zE" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #222;">
+          <h3>THE GOLDENS</h3>
+        </a>
+        <p class="release-date">2010.03.24</p>
+        <ol class="tracklist" type="1">
+          <li>ロックンロールナンバーワン</li>
+          <li>海岸線</li>
+          <li>ONE MORE BEER</li>
+          <li>片付けられない女</li>
+          <li>キスがしたい</li>
+          <li>ノーマン・ノーワーク</li>
+          <li>内々定</li>
+          <li>ダートフォード</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="album">
+      <a href="https://link-map.jp/links/Mo1eXtFw" target="_blank" rel="noopener noreferrer">
+        <img class="album-cover" src="HEADPHONE_BANGING.jpg" alt="HEADPHONE BANGING Album Cover">
+      </a>
+      <div class="album-info">
+        <a href="https://link-map.jp/links/Mo1eXtFw" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #222;">
+          <h3>HEADPHONE BANGING</h3>
+        </a>
+        <p class="release-date">2014.07.23</p>
+        <ol class="tracklist" type="1">
+          <li>バイバイバイ</li>
+          <li>生まれ変わりたい</li>
+          <li>LOVEレター</li>
+          <li>最初で最後</li>
+          <li>ボクナンテ</li>
+          <li>甘太郎</li>
+          <li>オレも仲間に入れてくれよ</li>
+          <li>海へ行こう</li>
+          <li>通り道</li>
+          <li>コアラのマーチ</li>
+          <li>何もないとこ</li>
+          <li>彼女と子供達の夢</li>
+          <li>平凡な男</li>
+        </ol>
+      </div>
+    </div>
   </section>
 
   <section id="shop">
@@ -175,8 +211,6 @@
     </div>
   </footer>
 
-
-
   <script>
     const videoIds = ['Ymb7EZDfWAI', 'bD1AaBu0j6s', 'R36z570hHp0', 'GXTbQP-7XWY', 'JmBkVaAf6f8'];
     const player = document.getElementById('youtube-player');
@@ -189,6 +223,5 @@
       setInterval(playRandomVideo, 5 * 60 * 1000);
     }
   </script>
-
 </body>
 </html>
