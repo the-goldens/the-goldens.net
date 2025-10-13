@@ -7,6 +7,8 @@
   <title>THE GOLDENS（ザ・ゴールデンズ）公式サイト｜FUNKY RECORDS</title>
   <meta name="description" content="ザ・ゴールデンズ公式サイトです。新しい何かを作りたいなどといった想いはなく、こんなのが好きなんだという憧れを垂れ流してます。ライブ情報や音源の最新情報を掲載">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rock+Salt&display=swap" rel="stylesheet" />
+  <link rel="icon" href="logo_inverted_black.png" type="image/png">
+  <link rel="apple-touch-icon" href="logo_inverted_black.png">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -145,6 +147,24 @@
         height: 60px;
       }
     }
+
+    /* LIVE SCHEDULE flyer styles */
+    #live-schedule .event-flyer {
+      margin: 10px 0 0;
+      display: block;
+      text-align: center;
+    }
+    #live-schedule .event-flyer img {
+      width: 100%;
+      max-width: 560px;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25), 0 2px 6px rgba(0,0,0,0.15);
+    }
+    #live-schedule .event-flyer figcaption {
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -167,7 +187,13 @@
     <h2>LIVE SCHEDULE</h2>
     <ul>
        <!-- 例：<li>2025/08/11 千葉 稲毛 K's Dream</li> -->
-       <li><a href="https://anga-hp.com/schedule/2025/11/">2025/11/23 千葉 千葉ANGA </a></li>
+       <li>
+         <a href="https://anga-hp.com/schedule/2025/11/">2025/11/23 千葉 千葉ANGA</a>
+         <figure class="event-flyer">
+           <img src="yuisama_sonic_2025_flyer.jpg" alt="YUISAMA SONIC 2025 イベントフライヤー">
+           <figcaption>YUISAMA SONIC 2025 フライヤー（画像をタップで拡大）</figcaption>
+         </figure>
+       </li>
     </ul>
   </section>
 
